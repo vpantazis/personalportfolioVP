@@ -102,6 +102,10 @@ footer {
     margin-top: auto;
 }
 
+.targetDate {
+    font-family: Arial;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     * , h1, p {
         font-size: 0.8rem;
