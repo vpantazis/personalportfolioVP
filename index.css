@@ -1,0 +1,171 @@
+* {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 0.96rem;    
+}
+
+h1 {
+    font-weight: bold; 
+    font-size: 1.188rem;
+}
+
+body {
+    margin: 0 20% 0 20%;
+    display: flex;
+}
+
+p {
+    font-size: 0.938rem;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "name links"
+        "about_me picture_me"
+        "text picture_me"
+        "Projects Projects";
+    grid-template-columns: 65% 35%;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 0px 10px;
+}    
+
+#name {
+    grid-area: name;
+}
+
+#links {
+    grid-area: links;
+    align-self: center;
+}
+
+#about_me {
+    grid-area: about_me;
+}
+
+#text p {
+    grid-area: text;
+}
+
+#Projects {
+    grid-area: Projects;
+}
+
+#Skills {
+    grid-area: Skills;
+}
+
+#picture_me img {
+    height: auto;
+    width: 100%; 
+    border-radius: 5%;
+    cursor: pointer;    /* Shows a pointer cursor when hovering over the image */
+}
+
+#picture_me {
+    grid-area: picture_me;
+}
+
+#Contact {
+    grid-area: Contact;
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5, #icon6, #icon7 {
+    height: auto;
+    width: 30px;
+    padding: 3px;
+}
+
+#icons, #icons2 {
+    display: flex;
+    gap: 1px;
+    width: fit-content;
+    justify-content: space-between;
+
+}
+
+.emoji {
+    color: red;
+  }
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    * , h1, p {
+        font-size: 0.8rem;
+    }
+
+    body {
+        margin: 10%;
+        display: flex;
+    }
+
+   #picture_me {
+        align-self: center;
+   }
+
+   #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   footer {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    * , h1, p {
+        font-size: 0.9rem;
+    }
+
+    body {
+        margin: 10%;
+        display: flex;
+    }
+
+   #picture_me {
+        align-self: center;
+   }
+
+   #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   footer {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    footer {
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        margin-top: auto;
+        }
+}

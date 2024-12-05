@@ -1,0 +1,101 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangelos Pantazis</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="name">Vaggelis Pantazis</h1>
+        
+        <nav id="links">
+            <a href="#about_me">About me</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <div id="about_me">
+            <h1>About me</h1>        
+        </div>
+        
+        <div id="text">
+            <p>Hi! I'm Vaggelis, I am from Greece and I love programming.
+                I work as an auditor and I want to change career to a software developer.</p>
+            <p id="myBirthday"></p>
+            <p>Do you want to know how many seconds are left for your birthday?</p>
+            <form action="">
+                <label for=""> Select your birthday:
+                    <input id="targetDate" type="date" name="bday" value="" min="2025-01-01"/>
+                </label>
+            </form>
+            <p id="yourBirthday"></p>
+            
+        </div>
+
+        <div id="picture_me">
+            <img id="picture_mee" src="./images/me.jpg" alt="picture of Vaggelis">
+        </div>
+
+        <div id="Projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>Blackjack</li>
+                <li>Chrome Extension</li>
+                <li>Dasmoto's Art & Crafts</li>
+                <li>Responsive Website for Panetolikos FC</li>
+                <li>Tea Shop</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="Skills">
+        <h1>Skills</h1>
+        <div id="icons">
+            <div>
+                <img id="icon1" src="./images/html3.png" alt="HTML icon">
+            </div>
+            <div>
+                <img id="icon2" src="./images/css.png" alt="CSS icon">
+            </div>
+            <div>
+                <img id="icon3" src="./images/js.png" alt="JS icon">
+            </div>
+            <div>
+                <img id="icon4" src="./images/github.png" alt="GitHub icon">
+            </div>
+        </div>
+    </div>
+
+    <div id="Contact">
+        <h1>Contact</h1>
+        <p>Do you think my portfolio is interesting? Contact me :)</p>
+        <div id="icons2">
+            <a href="https://www.linkedin.com/in/evangelospantazis-" target="_blank"><img id="icon5" src="./images/linkedin.jpg" alt="LinkedIn Icon - Contact"></a>
+            <img id="icon6" src="./images/github.png" alt="GitHub Icon - Contact">
+            <img id="icon7" src="./images/email.png" alt="Email Icon - Contact">    
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div id="tema">
+            <button id="darkTema">
+                Dark
+            </button>
+            <button id="lightTema">
+                Light
+            </button>
+        </div> 
+        <p>Made with <span class="emoji"> ♥ </span>from Stockholm</p>       
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
