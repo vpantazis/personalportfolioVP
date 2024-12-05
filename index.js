@@ -1,5 +1,3 @@
-document.getElementById('targetDate').valueAsDate = "yyyy-mm-dd";
-
 // Function to calculate and display the countdown
 function updateCountdown() {
     const targetDate = new Date('2025-07-14T23:59:59');
