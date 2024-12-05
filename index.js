@@ -1,4 +1,4 @@
-document.getElementById('targetDate').valueAsDate = new Date();
+document.getElementById('targetDate').valueAsDate = "yyyy-mm-dd";
 
 // Function to calculate and display the countdown
 function updateCountdown() {
